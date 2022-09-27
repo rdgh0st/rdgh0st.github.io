@@ -1,0 +1,82 @@
+#wrapper {
+    background-color: #83BFD6;
+}
+nav {
+    font-weight: bold;
+    padding: 0;
+    font-size: 120%;
+    text-align: center;
+    background-color: #6675C5;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+nav li {
+    border-bottom: 1px solid #002171;
+}
+nav a {
+    color: #BFC7F0;
+    text-decoration: none;
+}
+nav ul ul {
+    position: absolute;
+    background-color: #6675C5;
+    padding: 0;
+    display: none;
+}
+nav ul ul li {
+    border: 1px solid #2C3E9C;
+    display: block;
+    width: 8em;
+    text-align: left;
+    padding-left: 5px;
+    margin-left: 0;
+}
+nav li:hover ul {
+    display: block;
+}
+nav :hover {
+    color: #2C3E9C;
+}
+h1, h2 {
+    text-align: center;
+}
+#homehero {
+    height: 300px;
+    background-image: url(home.jpeg);
+    background-size: 100% 100%;
+}
+#sunrisehero {
+    height: 300px;
+    background-image: url(sunrise.jpg);
+    background-size: 100% 100%;
+}
+#purgatoryhero {
+    height: 300px;
+    background-image: url(purgatory.png);
+    background-size: 100% 100%;
+}
+#snowbowlhero {
+    height: 300px;
+    background-image: url(snowbowl.jpg);
+    background-size: 100% 100%;
+}
+#telluridehero {
+    height: 300px;
+    background-image: url(telluride.jpeg);
+    background-size: 100% 100%;
+}
+@media (min-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        justify-content: space-around;
+    }
+    nav li {
+        border-bottom: none;
+    }
+}
