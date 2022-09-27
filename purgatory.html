@@ -44,6 +44,7 @@
     </ul>
     <p>Purgatory is a gorgeous mountain perfect for those looking for a premier snow sports experience. Anything an experienced rider could want will be found here, and there are options for beginners as well.</p>
   </main>
+  <div id="googleMap" style="width:100%;height:400px;"></div>
   <footer>
     <br>
     Copyright &copy; 2022 Southwest Snow
@@ -51,5 +52,16 @@
     <a href="mailto:rob@davis.com">rob@davis.com</a>
   </footer>
 </div>
+<script>
+  function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(37.63110069453762, -107.81387436596276),
+      zoom:14,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNFje8Sjms85KK0MOKQLhDUPQ47RmP4kI&callback=myMap"></script>
 </body>
 </html>
