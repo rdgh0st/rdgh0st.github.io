@@ -44,6 +44,7 @@
     </ul>
     <p>While Telluride can certainly service beginner snowboarders, most of the features that make it special and distinct from other mountains on this sight can only be enjoyed by those who are extremely skilled and comfortable enough to do extremely difficult routes and backcountry.</p>
   </main>
+  <div id="googleMap" style="width:100%;height:400px;"></div>
   <footer>
     <br>
     Copyright &copy; 2022 Southwest Snow
@@ -51,5 +52,16 @@
     <a href="mailto:rob@davis.com">rob@davis.com</a>
   </footer>
 </div>
+<script>
+  function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(37.940085182295384, -107.84548702132213),
+      zoom:13,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNFje8Sjms85KK0MOKQLhDUPQ47RmP4kI&callback=myMap"></script>
 </body>
 </html>
