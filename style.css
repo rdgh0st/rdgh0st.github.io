@@ -44,6 +44,17 @@ nav :hover {
 h1, h2 {
     text-align: center;
 }
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+input {
+    margin-bottom: 0.5em;
+}
+textarea {
+    margin-bottom: 0.5em;
+}
 #homehero {
     height: 300px;
     background-image: url(home.jpeg);
@@ -67,6 +78,11 @@ h1, h2 {
 #telluridehero {
     height: 300px;
     background-image: url(telluride.jpeg);
+    background-size: 100% 100%;
+}
+#parkcityhero {
+    height: 300px;
+    background-image: url(parkcity.jpg);
     background-size: 100% 100%;
 }
 @media (min-width: 600px) {
