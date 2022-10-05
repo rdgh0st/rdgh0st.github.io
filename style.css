@@ -59,10 +59,13 @@ textarea {
 table {
     border: 2px solid #3399CC;
     border-collapse: collapse;
-    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 video {
-    align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 td {
     padding: 0.5em;
