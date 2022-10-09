@@ -112,6 +112,10 @@ main {
     background-image: url(parkcity.jpg);
     background-size: 100% 100%;
 }
+#centered {
+    margin-right: auto;
+    margin-left: auto;
+}
 @media (min-width: 600px) {
     nav ul {
         display: flex;
